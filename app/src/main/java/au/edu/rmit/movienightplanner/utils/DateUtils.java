@@ -1,4 +1,4 @@
-package com.example.MovieNightPlanner.utils;
+package au.edu.rmit.movienightplanner.utils;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

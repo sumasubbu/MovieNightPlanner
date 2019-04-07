@@ -1,4 +1,4 @@
-package com.example.MovieNightPlanner.model;
+package au.edu.rmit.movienightplanner.model;
 
 import java.time.LocalDateTime;
 import java.util.Map;
@@ -11,7 +11,7 @@ public interface EventInterface {
                                   LocalDateTime endDate,
                                   String venue,
                                   String location,
-                                  Movie movie);
+                                  AbstractMovie movie);
     public boolean unscheduleEvent(UUID id);
     public boolean editEvent(UUID id,
                              String title,
@@ -19,9 +19,9 @@ public interface EventInterface {
                              LocalDateTime endDate,
                              String venue,
                              String location,
-                             Movie movie);
-    public Map<UUID,Event> viewEvents ();
-    public boolean addMovie(UUID id, Movie movie);
+                             AbstractMovie movie);
+    public Map<UUID, AbstractEvent> getAllEvents();
+    public boolean addMovie(UUID id, AbstractMovie movie);
 
 
 

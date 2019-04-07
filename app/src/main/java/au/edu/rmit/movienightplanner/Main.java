@@ -1,20 +1,17 @@
-package com.example.MovieNightPlanner;
-
-import com.example.MovieNightPlanner.controller.MainActivityController;
-import com.example.MovieNightPlanner.model.Event;
-import com.example.MovieNightPlanner.service.EventService;
-import com.example.MovieNightPlanner.service.MovieService;
+package au.edu.rmit.movienightplanner;
 
 import java.io.IOException;
-import java.util.ArrayList;
+
+import au.edu.rmit.movienightplanner.service.EventImpl;
+import au.edu.rmit.movienightplanner.service.MovieImpl;
 
 public class Main {
     public static void main(String args[]) throws IOException {
-        MovieService movieService = new MovieService();
-        movieService.loadMovieData();
-        EventService eventService = new EventService(movieService);
-        eventService.loadEventData();
-        MainActivityController mainActivityController = new MainActivityController();
-        ArrayList<Event> events = new ArrayList<>(mainActivityController.getAllEvents());
+//        MovieImpl movieService = new MovieImpl();
+//        movieService.loadMovieData();
+//        EventImpl eventService = new EventImpl(movieService);
+//        eventService.loadEventData();
+////        MainActivityController mainActivityController = new MainActivityController();
+////        ArrayList<Event> events = new ArrayList<>(mainActivityController.getAllEvents());
     }
 }
