@@ -1,3 +1,3 @@
 # MovieNightPlanner
-A simple android app called Movie Night Planner to create and
+A simple android app to create and
 schedule movie viewing events and invite attendees
